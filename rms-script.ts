@@ -7,19 +7,22 @@ function main(): void {
 
     let count: number = 0;
     let happy: Emoji = new Emoji(1, new Color(0.676, 0.876, 0.249));
-    let base: Rectangle = new Rectangle(20, 20, 10, 10);
-    base.opacity = 0;
+    let base: Rectangle = new Rectangle(20, 20, -15, -30);
+    // base.opacity = 0;
     base.onclick = function (event: MouseEvent): void {
         count++;
+        if (count % 3 === 1) {
+            happy = new Emoji(0, new Color(0.957, 0.792, 0.098));
+            scene.add(happy.shapes());
+        } else if (count % 3 === 2) {
+            happy = new Emoji(-1, new Color(0.884, 0.088, 0.088));
+            scene.add(happy.shapes());
+        } else {
+            happy = new Emoji(1, new Color(0.676, 0.876, 0.249));
+            scene.add(happy.shapes());
+        }
     };
-    if (count % 3 === 1) {
-        happy = new Emoji(0, new Color(0.957, 0.792, 0.098));
-    } else if (count % 3 === 2) {
-        happy = new Emoji(-1, new Color(0.884, 0.088, 0.088));
-    }
-    scene.add(happy.shapes());
     scene.add(base);
-    
 }
 
 function initScene(): Group {
