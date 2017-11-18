@@ -7,7 +7,8 @@ function main(): void {
 
     let count: number = 0;
     let happy: Emoji = new Emoji(1, new Color(0.676, 0.876, 0.249));
-    let base: Rectangle = new Rectangle(40, 40, 10, 10);
+    let base: Rectangle = new Rectangle(20, 20, 10, 10);
+    base.opacity = 0;
     base.onclick = function (event: MouseEvent): void {
         count++;
     };
@@ -17,6 +18,8 @@ function main(): void {
         happy = new Emoji(-1, new Color(0.884, 0.088, 0.088));
     }
     scene.add(happy.shapes());
+    scene.add(base);
+    
 }
 
 function initScene(): Group {
