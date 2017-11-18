@@ -1,21 +1,6 @@
-/**    
- * Author: Cynthia Dong    
- * ONYEN:    730063332
- * UNC Honor Pledge: I certify that no unauthorized assistance has been received   
- * or given in the completion of this work. I certify that I understand and 
- * could now rewrite on my own, without assistance from course staff,  
- * the problem set code I am submitting.
- */
-
-// TODO: Import the classes you need to work with your Emoji
 import { Group, Color, Text, Ellipse, Circle, Path, Rectangle, Line, Stroke } from "introcs/graphics";
 
 export class FaceShape {
-    /**
-     * The tone of the FaceShape class is a property so that you can
-     * easily change the tone of an Emoji (i.e. red FaceShape tone is angry,
-     * green sick, etc);
-     */
     tone: Color;
 
     constructor(tone: Color) {
