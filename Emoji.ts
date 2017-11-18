@@ -38,7 +38,6 @@ export class Corner {
     }
 }
 
-// TODO: Eye class
 export class Eye {
     irisColor: Color;
 
@@ -55,10 +54,9 @@ export class Eye {
 
         shapes.add(eyeball);
         return shapes;
-
     }
 }
-// TODO: Mouth class
+
 export class Mouth {
     invert: number;
 

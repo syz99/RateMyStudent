@@ -10,7 +10,7 @@ function main(): void {
     scene.add(icon.shapes());
     let base: Rectangle = new Rectangle(30, 5, -15, -30);
     base.opacity = 1;
-    
+
     base.onclick = function (event: MouseEvent): void {
         clicks++;
         if (clicks % 3 === 1) { // happy
