@@ -1,4 +1,5 @@
 import { SVG, Group, Color } from "introcs/graphics";
+import { Emoji } from "./Emoji";
 
 function main(): void {
     let scene: Group = initScene();
