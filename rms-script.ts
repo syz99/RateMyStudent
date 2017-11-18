@@ -7,8 +7,8 @@ function main(): void {
 
     let count: number = 0;
     let happy: Emoji = new Emoji(1, new Color(0.676, 0.876, 0.249));
-    let base: Rectangle = new Rectangle(20, 20, -15, -30);
-    // base.opacity = 0;
+    let base: Rectangle = new Rectangle(30, 5, -15, -30);
+    base.opacity = 0;
     base.onclick = function (event: MouseEvent): void {
         count++;
         if (count % 3 === 1) {
