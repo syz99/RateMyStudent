@@ -33,6 +33,26 @@ export class FaceShape {
         return shapes;
     }
 }
+
+export class Corner {
+    tone: Color;
+
+    constructor(tone: Color) {
+        this.tone = tone;
+    }
+
+    shapes(): Group {
+        let shapes: Group = new Group();
+
+        let corner: Rectangle = new Rectangle(9, 9, 0.7, 9.6);
+        corner.fill = this.tone;
+        corner.strokeOpacity = 0;
+
+        shapes.add(corner);
+        return shapes;
+    }
+}
+
 // TODO: Eye class
 export class Eye {
     irisColor: Color;
@@ -80,29 +100,33 @@ export class Emoji {
     leftEye: Eye;
     rightEye: Eye;
     invert: number;
+    corner: Corner;
 
     constructor(i: number, emotion: Color) {
         this.faceShape = new FaceShape(emotion);
+        this.corner = new Corner(emotion);
         this.mouth = new Mouth(i);
         this.leftEye = new Eye(Color.WHITE);
         this.rightEye = new Eye(Color.WHITE);
-        
     }
 
     shapes(): Group {
         let shapes: Group = new Group();
 
         let fa: Group = this.faceShape.shapes();
+        let c: Group = this.corner.shapes();
         let mo: Group = this.mouth.shapes();
         let le: Group = this.leftEye.shapes();
         let re: Group = this.rightEye.shapes();
 
         fa.transform = fa.transform.translate(-15, -15);
+        c.transform = c.transform.rotate(0.9);
         mo.transform = mo.transform.translate(0, 5);
         le.transform = le.transform.translate(-6, -2);
         re.transform = re.transform.translate(6, -2);
 
         shapes.add(fa);
+        shapes.add(c);
         shapes.add(le);
         shapes.add(re);
         shapes.add(mo);
