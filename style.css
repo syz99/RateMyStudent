@@ -13,6 +13,17 @@ body {
     font-size: 180%;
 }
 
+#border {
+    margin-bottom: 1px;
+    padding: 30px 0;
+    background: url(https://www.ratemyprofessors.com/assets/first-columnfilterbg-07903e4531fa2549fa38ba50140a08de-07903e4531fa2549fa38ba50140a08de.png?1470681878) repeat top center;
+    background-image: url(https://www.ratemyprofessors.com/assets/first-columnfilterbg-07903e4531fa2549fa38ba50140a08de-07903e4531fa2549fa38ba50140a08de.png?1470681878);
+}
+#ad {
+    width: 700px;
+    height: 82px;
+}
+
 #numerics {
     display: flex;
     flex-flow: row nowrap;
@@ -26,16 +37,8 @@ body {
     padding-right: 0px;
     padding-bottom: 20px;
     padding-left: 0px;
-    float: left;
     background: url(https://www.ratemyprofessors.com/assets/icon_pattern_beige-5c65bce54a49c4995d9247caf37cad62.jpg?1510343647) repeat top center;
     background-image: url(https://www.ratemyprofessors.com/assets/icon_pattern_beige-5c65bce54a49c4995d9247caf37cad62.jpg?1510343647);
-    background-position-x: center;
-    background-position-y: top;
-    background-size: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
 }
 
 #rating {
@@ -62,6 +65,16 @@ body {
     color: gray;
     font-weight: bold;
     font-size: 85%;
+}
+#wta {
+    color: black;
+    font-weight: bold;
+    font-size: 325%;
+}
+#lowe {
+    color: black;
+    font-weight: bold;
+    font-size: 325%;
 }
 
 #tags {
