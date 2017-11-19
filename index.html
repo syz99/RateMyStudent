@@ -2,34 +2,63 @@
 <html>
     <head>
         <title>RateMyStudent</title>
-        <link href="style.css" type="text/css" rel="stylesheet"/> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn."/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Pathway Gothic One' rel='stylesheet'> 
     </head>
 
     <body>
         <a href="page2.html">Search For a New Student</a>
         <h1>RateMyStudent</h1>
         
+        <!-- Information Section -->
         <div id="info" class="flex-container">
             <div style="flex-grow: 1">
                 <svg id="artboard"></svg>
             </div>
-            <div style="flex-grow: 4">Samuel Zhang</div>
-            <div style="flex-grow: 8">Empty Right-Half Panel</div>
+            <div style="flex-grow: 1">Samuel Zhang</div>
+            <div style="flex-grow: 100">.</div>
         </div>
 
+        <!-- Statistics Section -->
         <div id="numerics" class="flex-container">
-            <div style="flex-grow: 2">Rating</div>
-            <div id="midNumerics" class="flex-container" style="flex-grow: 1">
-                <div>WouldTeachAgain</div>
-                <div>WorkEthic</div>
-                <div>Sleepiness</div>
+            <div id="rating" class="flex-container" style="flex-grow: 4">
+                OVERALL<br>QUALITY
+                <div id="num">
+                    4.0
+                </div>
             </div>
-            <div id="tags" style="flex-grow: 8">Tags</div>
+            <div id="midNumerics" class="flex-container" style="flex-grow: 1">
+                <div>WOULD TEACH<br>AGAIN</div>
+                <div>LEVEL OF<br>WORK ETHIC</div>
+                <div>SLEEPINESS</div>
+            </div>
+            <div id="tags" style="flex-grow: 8">
+                Top 20 Tags for this Student
+            </div>
         </div>
 
-        <div id="ratings" class="flex-container">
+        <!-- Professor/User Comments Section -->
+        <div id="posts" class="flex-container">
             <div>Kris's</div>
             <div>Diane's</div>
+            <div id="userRating">User Post
+            <form>
+                <div class="form-group">
+                    <label for="userPost"></label>
+                    <input type="text" class="form-control" id="userPost" placeholder="Start Typing Your Comment...">
+                    <button type="submit" class="btn btn-primary btn-xs btn-block">
+                    SUBMIT YOUR RATING 
+                    </button>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input">
+                        <small>Check To Add Details Before Submission</small>
+                    </label>
+                </div>
+            </form>
+            </div>
         </div>
 
         <script src="./rms-script.ts"></script>
