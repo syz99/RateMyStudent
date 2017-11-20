@@ -8,8 +8,26 @@
     </head>
 
     <body>
+        <!-- Heading Section -->
+        <div id="heading" class="flex-container">
+            <div style="flex-grow: 1">
+                    <img id="logo" height="55" width="350" src="https://lh3.googleusercontent.com/-njDu-jBOiqY/WhIgJsf4F4I/AAAAAAAAAEw/SX9lBj-UWFAuyN5bI_iBNyS_EQsVpGmTACJoC/w1060-h190-n-rw/RateMyStudentsLogo.png">
+            </div>
+            <div style="flex-grow: 16">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="searchBar" aria-describedby="login" placeholder="SEARCH FOR A STUDENT">
+                        <a href="page2.html">
+                            <button class="btn btn-primary" id="login">
+                                <h3>LOG IN</h3>
+                            </button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <a href="page2.html">Search For a New Student</a>
-        <h1>RateMyStudent</h1>
         
         <!-- Information Section -->
         <div id="info" class="flex-container">
@@ -34,7 +52,7 @@
             <div id="rating" class="flex-container" style="flex-grow: 2">
                 OVERALL<br>QUALITY
                 <div id="num">
-                    4.0
+                    2.0
                 </div>
             </div>
             <div id="midNumerics" class="flex-container" style="flex-grow: 1">
@@ -66,7 +84,7 @@
                     <label for="userPost"></label>
                     <input type="text" class="form-control" id="userPost" placeholder="Start Typing Your Comment...">
                     <button type="submit" class="btn btn-primary btn-xs btn-block">
-                    SUBMIT YOUR RATING 
+                        <h3>SUBMIT YOUR RATING </h3>
                     </button>
                 </div>
                 <div class="form-check">
