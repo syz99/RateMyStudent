@@ -11,7 +11,9 @@
         <!-- Heading Section -->
         <div id="heading" class="flex-container">
             <div style="flex-grow: 1">
-                <img id="logo" height="55" width="350" src="https://lh3.googleusercontent.com/-njDu-jBOiqY/WhIgJsf4F4I/AAAAAAAAAEw/SX9lBj-UWFAuyN5bI_iBNyS_EQsVpGmTACJoC/w1060-h190-n-rw/RateMyStudentsLogo.png">
+                <a target="_blank" href="http://www.ratemystudents.com/">
+                    <img id="logo" height="55" width="350" src="https://lh3.googleusercontent.com/-njDu-jBOiqY/WhIgJsf4F4I/AAAAAAAAAEw/SX9lBj-UWFAuyN5bI_iBNyS_EQsVpGmTACJoC/w1060-h190-n-rw/RateMyStudentsLogo.png">
+                </a>
             </div>
             <div style="flex-grow: 16">
                 <form>
@@ -31,19 +33,10 @@
 
         <a href="page2.html">Search For a New Student</a>
 
-        <!-- Left-side Section
+        <!-- Left-side Section -->
         <div class="left">
-            LEFT
+            SIDE
         </div>
-        .left {
-            position: fixed;
-            left: 0;
-            top: -100%;
-            bottom: -100%;
-            width: 50px;
-            background: rgb(67, 67, 67);
-        }
-        -->        
 
         <!-- Information Section -->
         <div id="info" class="flex-container">
@@ -78,7 +71,7 @@
                     </div>
                 <div><br>LEVEL OF<br>WORK ETHIC</div>
                     <div id="lowe">
-                        1.5
+                        1.0
                     </div>
                 <div><br>SLEEPINESS</div>
                     <div id="sleep">
@@ -98,12 +91,12 @@
             <form>
                 <div class="form-group">
                     <label for="userPost"></label>
-                    <input type="text" class="form-control" id="userPost" placeholder="Start Typing Your Comment...">
-                    <button type="submit" class="btn btn-primary btn-xs btn-block">
-                        <h3>SUBMIT YOUR RATING </h3>
+                    <input type="text" class="form-control" id="userPost" placeholder="Start typing your comment...">
+                    <button type="submit" id="submitbtn" class="btn btn-primary btn-sm btn-block">
+                    SUBMIT YOUR RATING
                     </button>
                 </div>
-                <div class="form-check">
+                <div id="checkbox" class="form-check">
                     <label class="form-check-label">
                         <input type="radio" class="form-check-input">
                         <small>Check To Add Details Before Submission</small>

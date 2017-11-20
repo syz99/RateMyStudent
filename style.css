@@ -12,16 +12,20 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: left;
+    align-items: center;
     background: rgb(67, 67, 67);
+}
+
+.searchBar {
+    color: rgb(128, 128, 128);
 }
 
 input[type=text] {
     width: 130px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
     border-radius: 25px;
     font-size: 16px;
-    background-color: white;
+    background-color: rgb(78, 78, 78);
     background-image: url(https://www.smartimage.com/wp-content/uploads/si-search-grey.png);
     background-size: 15%;
     background-position: 15px 13px; 
@@ -44,6 +48,7 @@ input[type=text]:focus {
     font-size: 14px;
     font-weight: bold;
     font-stretch: expanded;
+    position: 
 }
 .btn span {
   cursor: pointer;
@@ -67,6 +72,15 @@ input[type=text]:focus {
   right: 0;
 }
 
+.left {
+    position: fixed;
+    top: 78px;
+    bottom: -100px;
+    width: 50px;
+    background: rgb(67, 67, 67);
+    color: white;
+}  
+
 #info {
     margin-top: 75px;
     display: flex;
@@ -79,7 +93,8 @@ input[type=text]:focus {
 
 #border {
     margin-bottom: 1px;
-    padding: 30px 0;
+    padding: 30px;
+    margin-left: 50px;
     background: url(https://www.ratemyprofessors.com/assets/first-columnfilterbg-07903e4531fa2549fa38ba50140a08de-07903e4531fa2549fa38ba50140a08de.png?1470681878) repeat top center;
     background-image: url(https://www.ratemyprofessors.com/assets/first-columnfilterbg-07903e4531fa2549fa38ba50140a08de-07903e4531fa2549fa38ba50140a08de.png?1470681878);
 }
@@ -95,6 +110,7 @@ input[type=text]:focus {
     align-items: center;
     height: 300px;
     width: 100%;
+    margin-left: 50px;
     margin-bottom: 7px;
     padding: 10px 0 20px;
     padding-top: 10px;
@@ -156,9 +172,31 @@ input[type=text]:focus {
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
+    margin-left: 55px
 }
 
-.btn {
+#userPost {
+    margin-left: 25px;
+    padding-left: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: white;
+    color: rgb(86, 86, 86);
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-size: 13px;
+}
+#submitbtn {
+    border-radius: 0px;
+    border-color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background: rgb(23, 158, 254);
     color: white;
+    width: 250px;
+    font-size: 12px;
+}
+#checkbox {
+    margin-left: 510px;
 }
