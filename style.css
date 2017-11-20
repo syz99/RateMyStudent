@@ -1,22 +1,74 @@
 body {
+    margin: 0;
     font-family: 'Pathway Gothic One';
     color: #000000;
     text-align: center;
 }
 
 #heading {
+    padding: 10px;
+    width: 99%;
+    position: fixed;
     display: flex;
     flex-flow: row nowrap;
     justify-content: left;
-    background: rgb(66, 66, 66);
+    background: rgb(67, 67, 67);
 }
 
-#login {
-    background: rgb(58, 62, 64);
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(https://www.smartimage.com/wp-content/uploads/si-search-grey.png);
+    background-size: 15%;
+    background-position: 15px 13px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 90%;
+}
+
+#loginbtn {
+    border-radius: 25px;
+    width: 85px;
+    padding: 10px;
+    border: none;
+    background: rgb(40, 43, 44);
     color: rgb(35, 167, 255);
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: expanded;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn:hover span {
+  padding-right: 16px;
+}
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 #info {
+    margin-top: 75px;
     display: flex;
     height: 300px;
     flex-flow: row nowrap;
