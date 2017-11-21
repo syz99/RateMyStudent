@@ -44,11 +44,10 @@ input[type=text]:focus {
     padding: 10px;
     border: none;
     background: rgb(40, 43, 44);
-    color: rgb(35, 167, 255);
+    color: rgb(0, 184, 246);
     font-size: 14px;
     font-weight: bold;
     font-stretch: expanded;
-    position: 
 }
 .btn span {
   cursor: pointer;
@@ -109,7 +108,6 @@ input[type=text]:focus {
     justify-content: space-around;
     align-items: center;
     height: 325px;
-    width: 866px;
     margin-left: 50px;
     margin-bottom: 7px;
     padding-top: 0px;
@@ -200,7 +198,7 @@ input[type=text]:focus {
     border-color: white;
     padding-top: 6px;
     padding-bottom: 6px;
-    background: rgb(23, 158, 254);
+    background: rgb(0, 184, 246);
     color: white;
     width: 250px;
     font-size: 12px;
