@@ -108,14 +108,13 @@ input[type=text]:focus {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    height: 300px;
+    height: 325px;
     width: 866px;
     margin-left: 50px;
     margin-bottom: 7px;
-    padding: 10px 0 20px;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-right: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     padding-left: 0px;
     background: url(https://www.ratemyprofessors.com/assets/icon_pattern_beige-5c65bce54a49c4995d9247caf37cad62.jpg?1510343647) repeat top center;
     background-image: url(https://www.ratemyprofessors.com/assets/icon_pattern_beige-5c65bce54a49c4995d9247caf37cad62.jpg?1510343647);
@@ -126,17 +125,18 @@ input[type=text]:focus {
     height: 150px;
     width: 50px;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-around;
     color: gray;
     font-weight: bold;
     font-size: 175%;
-    margin-top: 14.5px;
-    padding: 2.46em;
-    border-right: 1px solid rgb(164, 164, 164);
+    margin-top: 45px;
+    padding: 3em;
+    border-right: 1px solid rgb(183, 183, 183);
 }
 
 #num {
-    width: 100px;
+    display: flex;
+    justify-content: center;
     color: black;
     font-size: 400%;
 }
@@ -150,9 +150,9 @@ input[type=text]:focus {
     color: gray;
     font-weight: bold;
     font-size: 85%;
-    margin-top: 10px;
-    padding: 1.4em;
-    border-right: 1px solid rgb(164, 164, 164);
+    margin-top: 43px;
+    padding: 2.5em;
+    border-right: 1px solid rgb(183, 183, 183);
 }
 #wta {
     color: black;
