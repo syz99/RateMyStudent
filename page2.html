@@ -7,21 +7,23 @@
         <link href='https://fonts.googleapis.com/css?family=Pathway Gothic One' rel='stylesheet'> 
     </head>
 
-    <body>
+    <body class="main">
         <!-- Heading Section -->
         <div id="heading" class="flex-container">
             <div style="flex-grow: 1">
+                <a target="_blank" href="http://www.ratemystudents.com/">
                     <img id="logo" height="55" width="350" src="https://lh3.googleusercontent.com/-njDu-jBOiqY/WhIgJsf4F4I/AAAAAAAAAEw/SX9lBj-UWFAuyN5bI_iBNyS_EQsVpGmTACJoC/w1060-h190-n-rw/RateMyStudentsLogo.png">
+                </a>
             </div>
             <div style="flex-grow: 16">
                 <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="searchBar" placeholder="SEARCH FOR A STUDENT">
+                        <input class="submit_on_enter" type="text" id="searchBar" name="search" placeholder="SEARCH FOR A STUDENT...">
                     </div>
                 </form>
             </div>
             <div>
-                <a href="index.html">
+                <a target="_blank" href="http://www.theuselessweb.com/">
                     <button class="btn btn-primary" id="loginbtn" style="vertical-align:middle">
                         <span>LOG IN</span>
                     </button>
@@ -30,13 +32,18 @@
         </div>
 
         <a href="page2.html">Search For a New Student</a>
-        
+
+        <!-- Left-side Section -->
+        <div class="left">
+            SIDE
+        </div>
+
         <!-- Information Section -->
         <div id="info" class="flex-container">
             <div style="flex-grow: 1">
                 <svg id="artboard"></svg>
             </div>
-            <div style="flex-grow: 1">Cynthia Dong</div>
+            <div style="flex-grow: 1">Samuel Zhang</div>
             <div style="flex-grow: 100">.</div>
         </div>
 
@@ -64,7 +71,7 @@
                     </div>
                 <div><br>LEVEL OF<br>WORK ETHIC</div>
                     <div id="lowe">
-                        1.5
+                        1.0
                     </div>
                 <div><br>SLEEPINESS</div>
                     <div id="sleep">
@@ -78,27 +85,44 @@
 
         <!-- Professor/User Comments Section -->
         <div id="posts" class="flex-container">
+            <div id="userRating">User Post <!-- </div> -->
+                <form>
+                    <div class="form-group">
+                        <label for="userPost"></label>
+                        <input type="text" class="form-control" id="userPost" placeholder="Start typing your comment...">
+                        <button type="submit" id="submitbtn" class="btn btn-primary btn-sm btn-block">
+                            SUBMIT YOUR RATING
+                        </button>
+                    </div>
+                    <div id="checkbox" class="form-check">
+                        <label class="form-check-label">
+                        <input type="radio" class="form-check-input">
+                            <small>Check To Add Details Before Submission</small>
+                        </label>
+                    </div>
+                </form>
+            </div>
             <div>Kris's</div>
             <div>Diane's</div>
-            <div id="userRating">User Post
-            <form>
-                <div class="form-group">
-                    <label for="userPost"></label>
-                    <input type="text" class="form-control" id="userPost" placeholder="Start Typing Your Comment...">
-                    <button type="submit" class="btn btn-primary btn-xs btn-block">
-                        <h3>SUBMIT YOUR RATING </h3>
-                    </button>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input">
-                        <small>Check To Add Details Before Submission</small>
-                    </label>
-                </div>
-            </form>
-            </div>
         </div>
-
         <script src="./rms-script.ts"></script>
     </body>
 </html>
+
+<!-- typewriter effect
+    #type {
+    animation: type 4s steps(20);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    width: 60ch;
+}
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 18ch;
+    }
+}
+-->

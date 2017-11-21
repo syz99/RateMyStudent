@@ -16,7 +16,7 @@ body {
     background: rgb(67, 67, 67);
 }
 
-.searchBar {
+#searchBar {
     color: rgb(128, 128, 128);
 }
 
@@ -109,7 +109,7 @@ input[type=text]:focus {
     justify-content: space-around;
     align-items: center;
     height: 300px;
-    width: 100%;
+    width: 866px;
     margin-left: 50px;
     margin-bottom: 7px;
     padding: 10px 0 20px;
@@ -124,14 +124,19 @@ input[type=text]:focus {
 #rating {
     display: flex;
     height: 150px;
+    width: 50px;
     flex-flow: column nowrap;
     justify-content: center;
     color: gray;
     font-weight: bold;
     font-size: 175%;
+    margin-top: 14.5px;
+    padding: 2.46em;
+    border-right: 1px solid rgb(164, 164, 164);
 }
 
 #num {
+    width: 100px;
     color: black;
     font-size: 400%;
 }
@@ -145,6 +150,9 @@ input[type=text]:focus {
     color: gray;
     font-weight: bold;
     font-size: 85%;
+    margin-top: 10px;
+    padding: 1.4em;
+    border-right: 1px solid rgb(164, 164, 164);
 }
 #wta {
     color: black;
@@ -163,7 +171,7 @@ input[type=text]:focus {
     flex-flow: column nowrap;
     justify-content: space-between;
     font-weight: bold;
-    font-size: 125%;
+    font-size: 175%;
 }
 
 #posts {
