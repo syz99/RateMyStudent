@@ -9,21 +9,13 @@ function main(): void {
     fakeSearch();
 }
 
-function initScene(): Group {
-    let svgTag: SVG = new SVG("artboard");
-    svgTag.autoScale = true;
-    let scene: Group = new Group();
-    svgTag.render(scene);
-    return scene;
-}
-
 function toggle(): void {
     let scene: Group = initScene();
 
     let clicks: number = -1;
     let icon: Emoji = new Emoji(-1, new Color(0.884, 0.088, 0.088));
     scene.add(icon.shapes());
-    
+
     document.onclick = function (event: MouseEvent): void {
         clicks++;
         if (clicks % 3 === 1) { // happy
@@ -37,7 +29,6 @@ function toggle(): void {
             scene.add(icon.shapes());
         }
     };
-    scene.add(base);
 }
 
 function fakeSearch(): void {
@@ -59,6 +50,14 @@ function fakeSearch(): void {
             // 
         }
     };
+}
+
+function initScene(): Group {
+    let svgTag: SVG = new SVG("artboard");
+    svgTag.autoScale = true;
+    let scene: Group = new Group();
+    svgTag.render(scene);
+    return scene;
 }
 
 main();
