@@ -23,10 +23,8 @@ function toggle(): void {
     let clicks: number = -1;
     let icon: Emoji = new Emoji(-1, new Color(0.884, 0.088, 0.088));
     scene.add(icon.shapes());
-    let base: Rectangle = new Rectangle(30, 5, -15, -30);
-    base.opacity = 1;
-
-    base.onclick = function (event: MouseEvent): void {
+    
+    document.onclick = function (event: MouseEvent): void {
         clicks++;
         if (clicks % 3 === 1) { // happy
             icon = new Emoji(0, new Color(0.957, 0.792, 0.098));
