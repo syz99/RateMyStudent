@@ -1,13 +1,12 @@
+import "introcs";
 import { SVG, Group, Color, Rectangle } from "introcs/graphics";
 import { Emoji } from "./Emoji";
-import "introcs";
 
 let searchBar: HTMLInputElement = document.getElementById("searchBar") as HTMLInputElement;
 
 function main(): void {
     toggle(); // calls the emoji toggle function
     fakeSearch();
-
 }
 
 function initScene(): Group {
