@@ -41,15 +41,22 @@ function toggle(): void {
 function fakeSearch(): void {
     let name1: string = "Cynthia Dong";
     let name2: string = "Samuel Zhang";
+    let name: string = "";
     let count: number = 0;
 
-    if (count < name1.length) {
+    if (window.location.href === "http://localhost:3000/RateMyStudent/page2.html") {
+        name = name2;
+    } else {
+        name = name1;
+    }
+
+    if (count < name.length) {
         searchBar.onkeyup = function(event: KeyboardEvent): void {
-            searchBar.value = name1.slice(0, searchBar.value.length);
+            searchBar.value = name.slice(0, searchBar.value.length);
             count++;
         };
     } else {
-        searchBar.value = name1;
+        searchBar.value = name;
     }
 }
 

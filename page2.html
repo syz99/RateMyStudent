@@ -32,7 +32,7 @@
             </div>
         </div>
 
-         <!-- WEIRD BUG -->
+        <!-- WEIRD BUG -->
         <!-- WEIRD BUG -->
         <!-- WEIRD BUG -->
         <!-- WEIRD BUG -->
@@ -64,8 +64,8 @@
             </div>
             <!-- Container 3 for Profile Picture -->
             <div id="profpic" style="flex-grow: 20">
-                <a href="sorry2.html">
-                    <img id="selfie" height="80px" width="auto" src="https://lh3.googleusercontent.com/-bvaxif9K8Uc/WhX--GpFnFI/AAAAAAAAAFY/KsyMqTB5skAa0jNMqzC6vpawfN-4sSddACJoC/w1060-h706-n-rw/Photo%2Bon%2B11-22-17%2Bat%2B5.47%2BPM%2B%25232.jpg">
+                <a href="trick2.html">
+                    <img id="selfie" height="80px" width="auto" src="https://lh3.googleusercontent.com/41XpFL9cFDeUcvoMswPGQzVzlYcryKvSENAz3nvAKS_Ka4PoWI2y1Xj11Rdqm6Ben5k1aE7j=w520-h346-n-rw">
                 </a>
             </div>
         </div>
@@ -74,18 +74,24 @@
         <div id="background" class="flex-container">
             <!-- Container 1 for Student Background Info -->
             <div>
-                Student in the Computer Science department
+                Student in the Undecided Major/Minor department
                 at
-                <a href="https://www.unc.edu" target="_blank">University of North Carolina at Chapel Hill</a>,
+                <a href="https://www.unc.edu" target="_blank" style="text-decoration: none">University of North Carolina at Chapel Hill</a>,
                 Chapel Hill, NC
             </div>
             <!-- Container 2 for "Is This You?" -->
             <div id="you">
-                is this you?
+                <a target="_blank" href="page3.html" style="text-decoration: none">
+                    <br>ARE YOU CYNTHIA?
+                </a>
             </div>
             <!-- Container 3 for Rating Form Button -->
             <div id="ratebtn">
-                ratebtn
+                <a href="form2.html">
+                    <button type="text" id="ratebtn" class="btn btn-primary btn-sm btn-block">
+                        Rate This Student
+                    </button>
+                </a>
             </div>
         </div>
 
@@ -105,23 +111,35 @@
                 <div>
                     OVERALL<br>QUALITY
                 </div>
-                <div id="num">
-                    2.0
+                <div id="num" class="tooltip">
+                    3.0
+                    <span class="tooltiptext">
+                        Good: 3.5-5, Average: 2.5-3.4, Poor: 1-2.4
+                    </span>
                 </div>
             </div>
             <!-- Container 2 for Middle Numerics -->
             <div id="midNumerics" class="flex-container" style="flex-grow: 1">
                 <div>WOULD TEACH<br>AGAIN</div>
-                    <div id="wta">
-                        34%
+                    <div id="wta" class="tooltip">
+                        11%
+                        <span class="tooltiptext">
+                            Avg percentage of professors willing to teach another course to this student
+                        </span>
                     </div>
                 <div><br>LEVEL OF<br>WORK ETHIC</div>
-                    <div id="lowe">
-                        1.0
+                    <div id="lowe" class="tooltip">
+                        2.0
+                        <span class="tooltiptext">
+                            How hard did this student work for your class? Not at All: 1, Very: 5
+                        </span>
                     </div>
                 <div><br>SLEEPINESS</div>
-                    <div id="sleep">
+                    <div id="sleep" class="tooltip">
                         <img id="zzz" height="50" width="50" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/92/sleeping-symbol_1f4a4.png">
+                        <span class="tooltiptext">
+                            How sleepy was this student in your class? Not at All: Gray, Very: Blue
+                        </span>
                     </div>
             </div>
             <!-- Container 3 for Student Tags -->
