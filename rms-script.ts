@@ -51,12 +51,6 @@ function fakeSearch(): void {
     } else {
         searchBar.value = name1;
     }
-
-    searchBar.onkeyup = function(event: KeyboardEvent): void {
-        if (event.keyCode === 13) {
-            // 
-        }
-    };
 }
 
 function initScene(): Group {
