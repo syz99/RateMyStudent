@@ -97,7 +97,7 @@ input[type=text]:focus {
 #background {
     display: flex;
     flex-flow: column nowrap;
-    height: 150px;
+    height: 175px;
     width: 325px;
     margin-left: 88px;
     justify-content: left;
@@ -123,6 +123,40 @@ input[type=text]:focus {
 }
 #selfie {
     border-radius: 50px;
+}
+
+#you {
+    color: rgb(0, 184, 246);
+    font-weight: bold;
+}
+
+a:link{
+    color: rgb(0, 184, 246);
+}
+a:visited{
+    color: rgb(0, 184, 246);
+}
+a:hover{
+    color: rgb(5, 149, 193);
+}
+a:focus{
+    color: rgb(0, 184, 246);
+}
+a:active{
+    color: rgb(0, 184, 246);
+}
+
+#ratebtn {
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    border: none;
+    background: rgb(0, 184, 246);
+    color: white;
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
 }
 
 #border {
@@ -205,6 +239,34 @@ input[type=text]:focus {
     justify-content: space-between;
     font-weight: bold;
     font-size: 175%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -144px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    /* 1 second fade in tooltip*/
+    opacity: 0;
+    transition: opacity 1s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 #posts {
