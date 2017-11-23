@@ -2,12 +2,19 @@ import "introcs";
 import { SVG, Group, Color, Rectangle } from "introcs/graphics";
 import { Emoji } from "./Emoji";
 
-let searchBar: HTMLInputElement = document.getElementById("searchBar") as HTMLInputElement;
+const searchBar: HTMLInputElement = document.getElementById("searchBar") as HTMLInputElement;
 
 function main(): void {
     toggle(); // calls the emoji toggle function
+    // pageSwitch();
     fakeSearch();
 }
+
+// function pageSwitch(): void {
+//     searchBar.onsubmit = function(event: KeyboardEvent): void {
+//         alert("hey");
+//     };
+// }
 
 function toggle(): void {
     let scene: Group = initScene();
@@ -16,7 +23,7 @@ function toggle(): void {
     let icon: Emoji = new Emoji(-1, new Color(0.884, 0.088, 0.088));
     scene.add(icon.shapes());
 
-    document.onclick = function (event: MouseEvent): void {
+    document.onclick = function(event: MouseEvent): void {
         clicks++;
         if (clicks % 3 === 1) { // happy
             icon = new Emoji(0, new Color(0.957, 0.792, 0.098));

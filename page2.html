@@ -10,19 +10,20 @@
     <body class="main">
         <!-- Heading Section -->
         <div id="heading" class="flex-container">
+            <!-- Container 1 for RMS Logo -->
             <div style="flex-grow: 1">
                 <a target="_blank" href="http://www.ratemystudents.com/">
                     <img id="logo" height="55" width="350" src="https://lh3.googleusercontent.com/-njDu-jBOiqY/WhIgJsf4F4I/AAAAAAAAAEw/SX9lBj-UWFAuyN5bI_iBNyS_EQsVpGmTACJoC/w1060-h190-n-rw/RateMyStudentsLogo.png">
                 </a>
             </div>
+            <!-- Container 2 for Search Bar -->
             <div style="flex-grow: 16">
-                <form>
-                    <div class="form-group">
-                        <input class="submit_on_enter" type="text" id="searchBar" name="search" placeholder="SEARCH FOR A STUDENT...">
-                    </div>
+                <form action="index.html">
+                    <input class="submit_on_enter" type="text" id="searchBar" name="search" placeholder="SEARCH FOR A STUDENT...">
                 </form>
             </div>
-            <div>
+            <!-- Container 3 for Login Button -->
+            <div id="log">
                 <a target="_blank" href="http://www.theuselessweb.com/">
                     <button class="btn btn-primary" id="loginbtn" style="vertical-align:middle">
                         <span>LOG IN</span>
@@ -31,7 +32,20 @@
             </div>
         </div>
 
-        <a href="page2.html">Search For a New Student</a>
+         <!-- WEIRD BUG -->
+        <!-- WEIRD BUG -->
+        <!-- WEIRD BUG -->
+        <!-- WEIRD BUG -->
+        <!-- WEIRD BUG -->
+
+        <a href="index.html">Search For a New Student</a>
+        <!-- Without this line, formatting in heading section is weird. -->
+
+        <!-- WEIRD BUG -->
+        <!-- WEIRD BUG -->
+        <!-- WEIRD BUG -->
+        <!-- WEIRD BUG -->
+        <!-- WEIRD BUG -->
 
         <!-- Left-side Section -->
         <div class="left">
@@ -40,30 +54,62 @@
 
         <!-- Information Section -->
         <div id="info" class="flex-container">
-            <div style="flex-grow: 1">
+            <!-- Container 1 for Emoticon -->
+            <div class="flex-container" style="flex-grow: 1">
                 <svg id="artboard"></svg>
             </div>
-            <div style="flex-grow: 1">Samuel Zhang</div>
-            <div style="flex-grow: 100">.</div>
+            <!-- Container 2 for Name -->
+            <div class="flex-container" id="profile" style="flex-grow: 1">
+                Cynthia Dong
+            </div>
+            <!-- Container 3 for Profile Picture -->
+            <div id="profpic" style="flex-grow: 20">
+                <a href="sorry2.html">
+                    <img id="selfie" height="80px" width="auto" src="https://lh3.googleusercontent.com/-bvaxif9K8Uc/WhX--GpFnFI/AAAAAAAAAFY/KsyMqTB5skAa0jNMqzC6vpawfN-4sSddACJoC/w1060-h706-n-rw/Photo%2Bon%2B11-22-17%2Bat%2B5.47%2BPM%2B%25232.jpg">
+                </a>
+            </div>
         </div>
 
-        <!-- Border Section -->
+        <!-- Background Section -->
+        <div id="background" class="flex-container">
+            <!-- Container 1 for Student Background Info -->
+            <div>
+                Student in the Computer Science department
+                at
+                <a href="https://www.unc.edu" target="_blank">University of North Carolina at Chapel Hill</a>,
+                Chapel Hill, NC
+            </div>
+            <!-- Container 2 for "Is This You?" -->
+            <div id="you">
+                is this you?
+            </div>
+            <!-- Container 3 for Rating Form Button -->
+            <div id="ratebtn">
+                ratebtn
+            </div>
+        </div>
+
+        <!-- Border Section w/ Advertisement -->
         <div id="border">
             <div>
                 <a target="_blank" href="http://www.comp110.com">
-                <img id="ad" height="50" width="700" src="https://lh3.googleusercontent.com/-3QsXLZmg09A/WhITNViwrqI/AAAAAAAAAEM/MHSmWgKflbMnI7ZfrVWvpVKPynz_klmPQCJoC/w1060-h130-n-rw/nationwidewide.png">
+                    <img id="ad" height="50" width="700" src="https://lh3.googleusercontent.com/-3QsXLZmg09A/WhITNViwrqI/AAAAAAAAAEM/MHSmWgKflbMnI7ZfrVWvpVKPynz_klmPQCJoC/w1060-h130-n-rw/nationwidewide.png">
                 </a>
             </div>
         </div>
 
         <!-- Statistics Section -->
         <div id="numerics" class="flex-container">
-            <div id="rating" class="flex-container" style="flex-grow: 2">
-                OVERALL<br>QUALITY
+            <!-- Container 1 for Overall Quality -->
+            <div id="rating" class="flex-container" style="flex-grow: 1">
+                <div>
+                    OVERALL<br>QUALITY
+                </div>
                 <div id="num">
                     2.0
                 </div>
             </div>
+            <!-- Container 2 for Middle Numerics -->
             <div id="midNumerics" class="flex-container" style="flex-grow: 1">
                 <div>WOULD TEACH<br>AGAIN</div>
                     <div id="wta">
@@ -78,13 +124,15 @@
                         <img id="zzz" height="50" width="50" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/92/sleeping-symbol_1f4a4.png">
                     </div>
             </div>
-            <div id="tags" style="flex-grow: 8">
+            <!-- Container 3 for Student Tags -->
+            <div id="tags" style="flex-grow: 10">
                 Top 20 Tags for this Student
             </div>
         </div>
 
         <!-- Professor/User Comments Section -->
         <div id="posts" class="flex-container">
+            <!-- Container 1 for User Rating -->
             <div id="userRating">User Post <!-- </div> -->
                 <form>
                     <div class="form-group">
@@ -102,7 +150,9 @@
                     </div>
                 </form>
             </div>
+            <!-- Container 2 for Kris' Rating -->
             <div>Kris's</div>
+            <!-- Container 3 for Diane's Rating -->
             <div>Diane's</div>
         </div>
         <script src="./rms-script.ts"></script>

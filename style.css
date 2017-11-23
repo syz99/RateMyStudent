@@ -17,7 +17,7 @@ body {
 }
 
 #searchBar {
-    color: rgb(128, 128, 128);
+    color: rgb(169, 224, 50);
 }
 
 input[type=text] {
@@ -38,6 +38,9 @@ input[type=text]:focus {
     width: 90%;
 }
 
+#log {
+    margin-right: 10px;
+}
 #loginbtn {
     border-radius: 25px;
     width: 85px;
@@ -81,13 +84,45 @@ input[type=text]:focus {
 }  
 
 #info {
-    margin-top: 75px;
     display: flex;
-    height: 300px;
+    margin-top: 85px;
+    height: 150px;
     flex-flow: row nowrap;
     justify-content: left;
     font-weight: bold;
     font-size: 180%;
+    margin-left: -20px;
+}
+
+#background {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 150px;
+    width: 325px;
+    margin-left: 88px;
+    justify-content: left;
+    align-items: top;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+#profile {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: top;
+    align-items: left;
+    font-size: 50px;
+    margin-left: -60px;
+    margin-top: 10px;
+}
+
+#profpic {
+    margin-top: 7px;
+    margin-left: -330px;
+}
+#selfie {
+    border-radius: 50px;
 }
 
 #border {
