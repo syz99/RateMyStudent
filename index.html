@@ -3,7 +3,7 @@
     <head>
         <title>RateMyStudent</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn."/>
-        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
         <link href='https://fonts.googleapis.com/css?family=Pathway Gothic One' rel='stylesheet'> 
     </head>
 
@@ -18,7 +18,7 @@
             </div>
             <!-- Container 2 for Search Bar -->
             <div style="flex-grow: 16">
-                <form action="page2.html">
+                <form action="assets/html/page2.html">
                     <input class="submit_on_enter" type="text" id="searchBar" name="search" placeholder="SEARCH FOR A STUDENT...">
                 </form>
             </div>
@@ -38,7 +38,7 @@
         <!-- WEIRD BUG -->
         <!-- WEIRD BUG -->
 
-        <a href="page2.html">Search For a New Student</a>
+        <a href="assets/html/page2.html">Search For a New Student</a>
         <!-- Without this line, formatting in heading section is weird. -->
 
         <!-- WEIRD BUG -->
@@ -64,7 +64,7 @@
             </div>
             <!-- Container 3 for Profile Picture -->
             <div id="profpic" style="flex-grow: 20">
-                <a href="trick.html">
+                <a href="assets/html/trick.html">
                     <img id="selfie" height="80px" width="auto" src="https://lh3.googleusercontent.com/-bvaxif9K8Uc/WhX--GpFnFI/AAAAAAAAAFY/KsyMqTB5skAa0jNMqzC6vpawfN-4sSddACJoC/w1060-h706-n-rw/Photo%2Bon%2B11-22-17%2Bat%2B5.47%2BPM%2B%25232.jpg">
                 </a>
             </div>
@@ -81,13 +81,13 @@
             </div>
             <!-- Container 2 for "Is This You?" -->
             <div id="you">
-                <a target="_blank" href="page3.html" style="text-decoration: none">
+                <a target="_blank" href="assets/html/page3.html" style="text-decoration: none">
                     <br>ARE YOU SAMUEL?
                 </a>
             </div>
             <!-- Container 3 for Rating Form Button -->
             <div id="ratebtn">
-                <a href="form.html">
+                <a href="assets/html/form.html">
                     <button type="text" id="ratebtn" class="btn btn-primary btn-sm btn-block">
                         Rate This Student
                     </button>
@@ -121,7 +121,7 @@
             <!-- Container 2 for Middle Numerics -->
             <div id="midNumerics" class="flex-container" style="flex-grow: 1">
                 <div>WOULD TEACH<br>AGAIN</div>
-                    <div id="wta" class="tooltip">
+                    <div id="wta" class="tooltip" style="bottom:0;">
                         34%
                         <span class="tooltiptext">
                             Avg percentage of professors willing to teach another course to this student
@@ -170,14 +170,14 @@
             </div>
             <!-- Container 2 for Kris' Rating -->
             <div>Kris's</div>
-            <iframe src="http://localhost:3000/RateMyStudent/form.html" height="300" width="1350" name="frame1" style="border:none;"></iframe>
-            <p><a id="krisRate" href="http://localhost:3000/RateMyStudent/form.html" target="frame1">Kris Rating</a></p>
+            <iframe src="http://localhost:3000/RateMyStudent/assets/html/form.html" height="300" width="1350" name="frame1" style="border:none;"></iframe>
+            <p><a id="krisRate" href="http://localhost:3000/RateMyStudent/assets/html/form.html" target="frame1">Kris Rating</a></p>
             <!-- Container 3 for Diane's Rating -->
             <div>Diane's</div>
-            <iframe src="http://localhost:3000/RateMyStudent/form2.html" height="300" width="1350" name="frame2" style="border:none;"></iframe>
-            <p><a id="dianeRate" href="http://localhost:3000/RateMyStudent/form2.html" target="frame2">Diane Rating</a></p>
+            <iframe src="http://localhost:3000/RateMyStudent/assets/html/form2.html" height="300" width="1350" name="frame2" style="border:none;"></iframe>
+            <p><a id="dianeRate" href="http://localhost:3000/RateMyStudent/assets/html/form2.html" target="frame2">Diane Rating</a></p>
         </div>
-        <script src="./rms-script.ts"></script>
+        <script src="assets/ts/rms-script.ts"></script>
     </body>
 </html>
 

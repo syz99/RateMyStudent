@@ -44,7 +44,7 @@ function fakeSearch(): void {
     let name: string = "";
     let count: number = 0;
 
-    if (window.location.href === "http://localhost:3000/RateMyStudent/page2.html") {
+    if (window.location.href === "http://localhost:3000/RateMyStudent/assets/html/page2.html") {
         name = name2;
     } else {
         name = name1;
